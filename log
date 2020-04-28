@@ -1,0 +1,1049 @@
+[  +19 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[  +35 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] 2a7bc389f28d83c581f7ddd4601588a22e12512e
+[        ] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git describe --match *.*.* --first-parent --long --tags
+[  +13 ms] Exit code 0 from: git describe --match *.*.* --first-parent --long --tags
+[        ] 1.17.0-3.2.pre-0-g2a7bc389f
+[   +9 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git rev-parse --abbrev-ref --symbolic @{u}
+[   +9 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] origin/beta
+[        ] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git ls-remote --get-url origin
+[   +9 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] git@github.com:flutter/flutter.git
+[  +71 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git rev-parse --abbrev-ref HEAD
+[  +11 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] beta
+[   +5 ms] executing: sw_vers -productName
+[  +13 ms] Exit code 0 from: sw_vers -productName
+[        ] Mac OS X
+[        ] executing: sw_vers -productVersion
+[  +13 ms] Exit code 0 from: sw_vers -productVersion
+[        ] 10.15.4
+[        ] executing: sw_vers -buildVersion
+[  +14 ms] Exit code 0 from: sw_vers -buildVersion
+[        ] 19E287
+[  +24 ms] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[   +9 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb devices -l
+[   +5 ms] executing: /usr/bin/xcode-select --print-path
+[   +6 ms] Exit code 0 from: /usr/bin/xcode-select --print-path
+[        ] /Applications/Xcode.app/Contents/Developer
+[        ] executing: /usr/bin/xcodebuild -version
+[  +91 ms] Exit code 0 from: /usr/bin/xcodebuild -version
+[        ] Xcode 11.4.1
+           Build version 11E503a
+[   +2 ms] executing: xcrun --find xcdevice
+[   +7 ms] Exit code 0 from: xcrun --find xcdevice
+[        ] /Applications/Xcode.app/Contents/Developer/usr/bin/xcdevice
+[        ] executing: xcrun xcdevice list --timeout 2
+[   +3 ms] /usr/bin/xcrun simctl list --json devices
+[        ] executing: /usr/bin/xcrun simctl list --json devices
+[  +43 ms] List of devices attached
+           9B131FFAZ00181         device usb:336592896X product:flame model:Pixel_4 device:flame transport_id:7
+[  +95 ms] {
+             "devices" : {
+               "com.apple.CoreSimulator.SimRuntime.tvOS-13-4" : [
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/B1C22651-279E-434F-85F4-964A8B0431F7\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/B1C22651-279E-434F-85F4-964A8B0431F7",
+                   "udid" : "B1C22651-279E-434F-85F4-964A8B0431F7",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/BCAE3978-5C68-4807-A411-47E86DBDF53A\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/BCAE3978-5C68-4807-A411-47E86DBDF53A",
+                   "udid" : "BCAE3978-5C68-4807-A411-47E86DBDF53A",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-4K",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV 4K"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/C77308A8-3D35-4FB7-A6A3-C2DDAA63CEFB\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/C77308A8-3D35-4FB7-A6A3-C2DDAA63CEFB",
+                   "udid" : "C77308A8-3D35-4FB7-A6A3-C2DDAA63CEFB",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-1080p",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV 4K (at 1080p)"
+                 }
+               ],
+               "com.apple.CoreSimulator.SimRuntime.watchOS-6-2" : [
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/32318F1F-DE41-4C1B-9CCC-E9EF0921EE41\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/32318F1F-DE41-4C1B-9CCC-E9EF0921EE41",
+                   "udid" : "32318F1F-DE41-4C1B-9CCC-E9EF0921EE41",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-40mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 4 - 40mm"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/6367157C-E902-48E7-A612-55FB230F56A8\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/6367157C-E902-48E7-A612-55FB230F56A8",
+                   "udid" : "6367157C-E902-48E7-A612-55FB230F56A8",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-44mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 4 - 44mm"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/5B1117D8-10BB-4B8A-BB67-97490B8328C3\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/5B1117D8-10BB-4B8A-BB67-97490B8328C3",
+                   "udid" : "5B1117D8-10BB-4B8A-BB67-97490B8328C3",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-40mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 5 - 40mm"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/D22A814F-A3B5-437A-8FD2-3D940F062E74\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/D22A814F-A3B5-437A-8FD2-3D940F062E74",
+                   "udid" : "D22A814F-A3B5-437A-8FD2-3D940F062E74",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-44mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 5 - 44mm"
+                 }
+               ],
+               "com.apple.CoreSimulator.SimRuntime.iOS-13-4" : [
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/6A2B4A63-5261-4C38-AC92-1FC977F1E67E\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/6A2B4A63-5261-4C38-AC92-1FC977F1E67E",
+                   "udid" : "6A2B4A63-5261-4C38-AC92-1FC977F1E67E",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 8"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/E614A92A-AB65-4EB7-AA64-7062A5C13D2B\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/E614A92A-AB65-4EB7-AA64-7062A5C13D2B",
+                   "udid" : "E614A92A-AB65-4EB7-AA64-7062A5C13D2B",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8-Plus",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 8 Plus"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/89DEE714-2BA5-46E2-8D79-AD5C76B8F190\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/89DEE714-2BA5-46E2-8D79-AD5C76B8F190",
+                   "udid" : "89DEE714-2BA5-46E2-8D79-AD5C76B8F190",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/B48A2038-A4CB-4897-B361-EE61972B5F66\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/B48A2038-A4CB-4897-B361-EE61972B5F66",
+                   "udid" : "B48A2038-A4CB-4897-B361-EE61972B5F66",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11 Pro"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/E80DB27C-D51E-4316-B04B-34AFF9E3E583\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/E80DB27C-D51E-4316-B04B-34AFF9E3E583",
+                   "udid" : "E80DB27C-D51E-4316-B04B-34AFF9E3E583",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11 Pro Max"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/46E6DE72-0DFC-4AF6-A95C-943ED91D7AE5\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/46E6DE72-0DFC-4AF6-A95C-943ED91D7AE5",
+                   "udid" : "46E6DE72-0DFC-4AF6-A95C-943ED91D7AE5",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE--2nd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPhone SE (2nd generation)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/7C577021-352F-489E-B270-DCCFE7845C64\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/7C577021-352F-489E-B270-DCCFE7845C64",
+                   "udid" : "7C577021-352F-489E-B270-DCCFE7845C64",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--9-7-inch-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (9.7-inch)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/CF9E455A-AEB2-4AB0-BD07-BDF30E374437\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/CF9E455A-AEB2-4AB0-BD07-BDF30E374437",
+                   "udid" : "CF9E455A-AEB2-4AB0-BD07-BDF30E374437",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--7th-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad (7th generation)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/245EA37A-35B4-4DCA-B1DD-5B4C6F8E985E\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/245EA37A-35B4-4DCA-B1DD-5B4C6F8E985E",
+                   "udid" : "245EA37A-35B4-4DCA-B1DD-5B4C6F8E985E",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (11-inch)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/36704F11-CE33-44AF-9D8E-7F82DA332297\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/36704F11-CE33-44AF-9D8E-7F82DA332297",
+                   "udid" : "36704F11-CE33-44AF-9D8E-7F82DA332297",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---3rd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (12.9-inch) (3rd generation)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/CD84F813-0ECC-40F7-838A-A1928090EFCB\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/CD84F813-0ECC-40F7-838A-A1928090EFCB",
+                   "udid" : "CD84F813-0ECC-40F7-838A-A1928090EFCB",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch---2nd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (11-inch) (2nd generation)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/CF0640AA-D47F-494E-BBC6-644AC1DC58F0\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/CF0640AA-D47F-494E-BBC6-644AC1DC58F0",
+                   "udid" : "CF0640AA-D47F-494E-BBC6-644AC1DC58F0",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---4th-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (12.9-inch) (4th generation)"
+                 },
+                 {
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/63B1D4C5-A714-4767-9A50-F64EB1A87217\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/63B1D4C5-A714-4767-9A50-F64EB1A87217",
+                   "udid" : "63B1D4C5-A714-4767-9A50-F64EB1A87217",
+                   "isAvailable" : true,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--3rd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Air (3rd generation)"
+                 }
+               ],
+               "com.apple.CoreSimulator.SimRuntime.iOS-13-3" : [
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/965E0EF0-BD8F-491E-AA49-59F7FB5D308E\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/965E0EF0-BD8F-491E-AA49-59F7FB5D308E",
+                   "udid" : "965E0EF0-BD8F-491E-AA49-59F7FB5D308E",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 8"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/D23DD77D-14A9-42AE-AF1A-1FC2A981DC03\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/D23DD77D-14A9-42AE-AF1A-1FC2A981DC03",
+                   "udid" : "D23DD77D-14A9-42AE-AF1A-1FC2A981DC03",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-8-Plus",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 8 Plus"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/646F3596-D5A5-4554-B651-61F5260F5A58\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/646F3596-D5A5-4554-B651-61F5260F5A58",
+                   "udid" : "646F3596-D5A5-4554-B651-61F5260F5A58",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/4CD99496-6EE7-454A-9421-1C743463EC98\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/4CD99496-6EE7-454A-9421-1C743463EC98",
+                   "udid" : "4CD99496-6EE7-454A-9421-1C743463EC98",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11 Pro"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/61BDF6BE-FF14-4D84-A61C-0E88FB2E27AE\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/61BDF6BE-FF14-4D84-A61C-0E88FB2E27AE",
+                   "udid" : "61BDF6BE-FF14-4D84-A61C-0E88FB2E27AE",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max",
+                   "state" : "Shutdown",
+                   "name" : "iPhone 11 Pro Max"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/C91B48A4-208C-472B-AB27-759EB9254BCE\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/C91B48A4-208C-472B-AB27-759EB9254BCE",
+                   "udid" : "C91B48A4-208C-472B-AB27-759EB9254BCE",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--9-7-inch-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (9.7-inch)"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/25118042-5715-406C-B6F9-5ADDF4ACDD50\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/25118042-5715-406C-B6F9-5ADDF4ACDD50",
+                   "udid" : "25118042-5715-406C-B6F9-5ADDF4ACDD50",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--7th-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad (7th generation)"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/4DF7A8E5-B12D-4388-AB72-57359F8EAD87\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/4DF7A8E5-B12D-4388-AB72-57359F8EAD87",
+                   "udid" : "4DF7A8E5-B12D-4388-AB72-57359F8EAD87",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (11-inch)"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/C1FE8320-5431-4A64-9085-FE352DEF051E\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/C1FE8320-5431-4A64-9085-FE352DEF051E",
+                   "udid" : "C1FE8320-5431-4A64-9085-FE352DEF051E",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---3rd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Pro (12.9-inch) (3rd generation)"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/E119AED0-BEC4-4ACA-BF9C-CADC16C8784A\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/E119AED0-BEC4-4ACA-BF9C-CADC16C8784A",
+                   "udid" : "E119AED0-BEC4-4ACA-BF9C-CADC16C8784A",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--3rd-generation-",
+                   "state" : "Shutdown",
+                   "name" : "iPad Air (3rd generation)"
+                 }
+               ],
+               "com.apple.CoreSimulator.SimRuntime.watchOS-6-1" : [
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/E0E9E5A7-E844-4F22-9275-0FC6B9B9BD1B\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/E0E9E5A7-E844-4F22-9275-0FC6B9B9BD1B",
+                   "udid" : "E0E9E5A7-E844-4F22-9275-0FC6B9B9BD1B",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-40mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 4 - 40mm"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/9727C625-78BC-4084-9B1D-9A00679487E4\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/9727C625-78BC-4084-9B1D-9A00679487E4",
+                   "udid" : "9727C625-78BC-4084-9B1D-9A00679487E4",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-4-44mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 4 - 44mm"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/8A12B0BA-6B6A-4C0F-AE84-772FF5701D5C\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/8A12B0BA-6B6A-4C0F-AE84-772FF5701D5C",
+                   "udid" : "8A12B0BA-6B6A-4C0F-AE84-772FF5701D5C",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-40mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 5 - 40mm"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/FCCF1434-3F54-4E06-BAB2-ECD52BD72F4C\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/FCCF1434-3F54-4E06-BAB2-ECD52BD72F4C",
+                   "udid" : "FCCF1434-3F54-4E06-BAB2-ECD52BD72F4C",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-44mm",
+                   "state" : "Shutdown",
+                   "name" : "Apple Watch Series 5 - 44mm"
+                 }
+               ],
+               "com.apple.CoreSimulator.SimRuntime.tvOS-13-3" : [
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/D6F2D6F2-E40B-493C-A2B7-346877DA883F\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/D6F2D6F2-E40B-493C-A2B7-346877DA883F",
+                   "udid" : "D6F2D6F2-E40B-493C-A2B7-346877DA883F",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/AFC81FD3-519A-4633-B224-211C2BF298CF\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/AFC81FD3-519A-4633-B224-211C2BF298CF",
+                   "udid" : "AFC81FD3-519A-4633-B224-211C2BF298CF",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-4K",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV 4K"
+                 },
+                 {
+                   "availabilityError" : "runtime profile not found",
+                   "dataPath" : "\/Users\/kleak\/Library\/Developer\/CoreSimulator\/Devices\/E106AB49-9FA2-4F19-A1F3-C259FF7C944C\/data",
+                   "logPath" : "\/Users\/kleak\/Library\/Logs\/CoreSimulator\/E106AB49-9FA2-4F19-A1F3-C259FF7C944C",
+                   "udid" : "E106AB49-9FA2-4F19-A1F3-C259FF7C944C",
+                   "isAvailable" : false,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-1080p",
+                   "state" : "Shutdown",
+                   "name" : "Apple TV 4K (at 1080p)"
+                 }
+               ]
+             }
+           }
+[+2489 ms] [
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad8,12",
+               "identifier" : "CF0640AA-D47F-494E-BBC6-644AC1DC58F0",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-12point9-4th-1",
+               "modelName" : "iPad Pro (12.9-inch) (4th generation)",
+               "name" : "iPad Pro (12.9-inch) (4th generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "6.2 (17T256)",
+               "available" : true,
+               "platform" : "com.apple.platform.watchsimulator",
+               "modelCode" : "Watch5,4",
+               "identifier" : "D22A814F-A3B5-437A-8FD2-3D940F062E74",
+               "architecture" : "i386",
+               "modelUTI" : "com.apple.watch-series5-1",
+               "modelName" : "Apple Watch Series 5 - 44mm",
+               "name" : "Apple Watch Series 5 - 44mm"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone12,3",
+               "identifier" : "B48A2038-A4CB-4897-B361-EE61972B5F66",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-11-pro-1",
+               "modelName" : "iPhone 11 Pro",
+               "name" : "iPhone 11 Pro"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad8,1",
+               "identifier" : "245EA37A-35B4-4DCA-B1DD-5B4C6F8E985E",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-11-1",
+               "modelName" : "iPad Pro (11-inch) (1st generation)",
+               "name" : "iPad Pro (11-inch)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone12,5",
+               "identifier" : "E80DB27C-D51E-4316-B04B-34AFF9E3E583",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-11-pro-max-1",
+               "modelName" : "iPhone 11 Pro Max",
+               "name" : "iPhone 11 Pro Max"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "6.2 (17T256)",
+               "available" : true,
+               "platform" : "com.apple.platform.watchsimulator",
+               "modelCode" : "Watch5,3",
+               "identifier" : "5B1117D8-10BB-4B8A-BB67-97490B8328C3",
+               "architecture" : "i386",
+               "modelUTI" : "com.apple.watch-series5-1",
+               "modelName" : "Apple Watch Series 5 - 40mm",
+               "name" : "Apple Watch Series 5 - 40mm"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "6.2 (17T256)",
+               "available" : true,
+               "platform" : "com.apple.platform.watchsimulator",
+               "modelCode" : "Watch4,4",
+               "identifier" : "6367157C-E902-48E7-A612-55FB230F56A8",
+               "architecture" : "i386",
+               "modelUTI" : "com.apple.watch-series4-1",
+               "modelName" : "Apple Watch Series 4 - 44mm",
+               "name" : "Apple Watch Series 4 - 44mm"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad8,5",
+               "identifier" : "36704F11-CE33-44AF-9D8E-7F82DA332297",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-12point9-1",
+               "modelName" : "iPad Pro (12.9-inch) (3rd generation)",
+               "name" : "iPad Pro (12.9-inch) (3rd generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4 (17L255)",
+               "available" : true,
+               "platform" : "com.apple.platform.appletvsimulator",
+               "modelCode" : "AppleTV6,2",
+               "identifier" : "BCAE3978-5C68-4807-A411-47E86DBDF53A",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.apple-tv-4k",
+               "modelName" : "Apple TV 4K",
+               "name" : "Apple TV 4K"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone12,8",
+               "identifier" : "46E6DE72-0DFC-4AF6-A95C-943ED91D7AE5",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-se-1",
+               "modelName" : "iPhone SE (2nd generation)",
+               "name" : "iPhone SE (2nd generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4 (17L255)",
+               "available" : true,
+               "platform" : "com.apple.platform.appletvsimulator",
+               "modelCode" : "AppleTV5,3",
+               "identifier" : "B1C22651-279E-434F-85F4-964A8B0431F7",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.apple-tv-4",
+               "modelName" : "Apple TV",
+               "name" : "Apple TV"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad7,12",
+               "identifier" : "CF9E455A-AEB2-4AB0-BD07-BDF30E374437",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-7-wwan-1",
+               "modelName" : "iPad (7th generation)",
+               "name" : "iPad (7th generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone10,4",
+               "identifier" : "6A2B4A63-5261-4C38-AC92-1FC977F1E67E",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-8-2",
+               "modelName" : "iPhone 8",
+               "name" : "iPhone 8"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad8,9",
+               "identifier" : "CD84F813-0ECC-40F7-838A-A1928090EFCB",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-11-2nd-1",
+               "modelName" : "iPad Pro (11-inch) (2nd generation)",
+               "name" : "iPad Pro (11-inch) (2nd generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "6.2 (17T256)",
+               "available" : true,
+               "platform" : "com.apple.platform.watchsimulator",
+               "modelCode" : "Watch4,3",
+               "identifier" : "32318F1F-DE41-4C1B-9CCC-E9EF0921EE41",
+               "architecture" : "i386",
+               "modelUTI" : "com.apple.watch-series4-1",
+               "modelName" : "Apple Watch Series 4 - 40mm",
+               "name" : "Apple Watch Series 4 - 40mm"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone12,1",
+               "identifier" : "89DEE714-2BA5-46E2-8D79-AD5C76B8F190",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-11-1",
+               "modelName" : "iPhone 11",
+               "name" : "iPhone 11"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad11,3",
+               "identifier" : "63B1D4C5-A714-4767-9A50-F64EB1A87217",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-air3-wifi-1",
+               "modelName" : "iPad Air (3rd generation)",
+               "name" : "iPad Air (3rd generation)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone10,5",
+               "identifier" : "E614A92A-AB65-4EB7-AA64-7062A5C13D2B",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-8-plus-2",
+               "modelName" : "iPhone 8 Plus",
+               "name" : "iPhone 8 Plus"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4.1 (17E8260)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad6,4",
+               "identifier" : "7C577021-352F-489E-B270-DCCFE7845C64",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-9point7-a1674-b9b7ba",
+               "modelName" : "iPad Pro (9.7-inch)",
+               "name" : "iPad Pro (9.7-inch)"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "13.4 (17L255)",
+               "available" : true,
+               "platform" : "com.apple.platform.appletvsimulator",
+               "modelCode" : "AppleTV6,2",
+               "identifier" : "C77308A8-3D35-4FB7-A6A3-C2DDAA63CEFB",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.apple-tv-4k",
+               "modelName" : "Apple TV 4K (at 1080p)",
+               "name" : "Apple TV 4K (at 1080p)"
+             }
+           ]
+[   +6 ms] /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell getprop
+[  +36 ms] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +166 ms] Generating /Users/kleak/Work/github.com/Kleak/localization_crash_repro/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[  +21 ms] ro.hardware = flame
+[        ] ro.build.characteristics = nosdcard
+[  +41 ms] Launching lib/main.dart on Pixel 4 in debug mode...
+[   +6 ms] /Users/kleak/Work/github.com/flutter/flutter/bin/cache/dart-sdk/bin/dart /Users/kleak/Work/github.com/flutter/flutter/bin/cache/artifacts/engine/darwin-x64/frontend_server.dart.snapshot --sdk-root /Users/kleak/Work/github.com/flutter/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --debugger-module-names -Ddart.developer.causal_async_stacks=true --output-dill /var/folders/pd/h7gn61111kj6k41f_rctqxww0000gn/T/flutter_tool.oThhxH/app.dill --packages /Users/kleak/Work/github.com/Kleak/localization_crash_repro/.packages -Ddart.vm.profile=false -Ddart.vm.product=false --bytecode-options=source-positions,local-var-info,debugger-stops,instance-field-initializers,keep-unreachable-code,avoid-closure-call-instructions --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build/cache.dill
+[   +9 ms] executing: /Users/kleak/Library/Android/sdk/build-tools/29.0.2/aapt dump xmltree /Users/kleak/Work/github.com/Kleak/localization_crash_repro/build/app/outputs/apk/app.apk AndroidManifest.xml
+[   +7 ms] Exit code 0 from: /Users/kleak/Library/Android/sdk/build-tools/29.0.2/aapt dump xmltree /Users/kleak/Work/github.com/Kleak/localization_crash_repro/build/app/outputs/apk/app.apk AndroidManifest.xml
+[        ] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x1c
+               A: android:compileSdkVersionCodename(0x01010573)="9" (Raw: "9")
+               A: package="com.example.localization_crash_repro" (Raw: "com.example.localization_crash_repro")
+               A: platformBuildVersionCode=(type 0x10)0x1c
+               A: platformBuildVersionName=(type 0x10)0x9
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x10
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x1c
+               E: uses-permission (line=14)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: application (line=22)
+                 A: android:label(0x01010001)="localization_crash_repro" (Raw: "localization_crash_repro")
+                 A: android:icon(0x01010002)=@0x7f080000
+                 A: android:name(0x01010003)="io.flutter.app.FlutterApplication" (Raw: "io.flutter.app.FlutterApplication")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=28)
+                   A: android:theme(0x01010000)=@0x7f0a0000
+                   A: android:name(0x01010003)="com.example.localization_crash_repro.MainActivity" (Raw: "com.example.localization_crash_repro.MainActivity")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=42)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0a0001
+                   E: meta-data (line=52)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.SplashScreenDrawable" (Raw: "io.flutter.embedding.android.SplashScreenDrawable")
+                     A: android:resource(0x01010025)=@0x7f040000
+                   E: intent-filter (line=56)
+                     E: action (line=57)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=59)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=66)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+[   +7 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell -x logcat -v time -t 1
+[  +39 ms] Exit code 0 from: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell -x logcat -v time -t 1
+[        ] --------- beginning of system
+           04-28 16:08:46.975 D/PowerUI ( 1840): can't show warning due to - plugged: true status unknown: false
+[  +14 ms] <- compile package:localization_crash_repro/main.dart
+[  +10 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb version
+[  +18 ms] Android Debug Bridge version 1.0.41
+           Version 29.0.6-6198805
+           Installed as /Users/kleak/Library/Android/sdk/platform-tools/adb
+[   +2 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb start-server
+[  +14 ms] Building APK
+[  +18 ms] Running Gradle task 'assembleDebug'...
+[   +1 ms] gradle.properties already sets `android.enableR8`
+[   +2 ms] Using gradle from /Users/kleak/Work/github.com/Kleak/localization_crash_repro/android/gradlew.
+[        ] /Users/kleak/Work/github.com/Kleak/localization_crash_repro/android/gradlew mode: 33261 rwxr-xr-x.
+[   +7 ms] executing: /usr/bin/plutil -convert json -o - /Users/kleak/Applications/JetBrains Toolbox/Android Studio.app/Contents/Info.plist
+[  +10 ms] Exit code 0 from: /usr/bin/plutil -convert json -o - /Users/kleak/Applications/JetBrains Toolbox/Android Studio.app/Contents/Info.plist
+[        ] {"NSUIElement":false,"LSApplicationCategoryType":"public.app-category.developer-tools","CFBundleInfoDictionaryVersion":"6.0","CFBundleIdentifier":"com.jetbrains.toolbox.linkapp.pcom.jetbrains.toolbox__ndroid_tudio_3_6_3","CFBundleVersion":"3.6.3","CFBundleLongVersionString":"3.6.3","CFBundleExecutable":"jetbrains-toolbox-launcher","CFBundleName":"Android Studio 3.6.3","CFBundleGetInfoString":"","NSHighResolutionCapable":true,"CFBundleSignature":"????","LSUIElement":true,"CFBundlePackageType":"APPL","CFBundleIconFile":"icon.icns","JetBrainsToolboxApp":"\/Users\/kleak\/Library\/Application Support\/JetBrains\/Toolbox\/apps\/AndroidStudio\/ch-0\/192.6392135\/Android Studio.app","CFBundleDevelopmentRegion":"English","NSHumanReadableCopyright":"Copyright (c) JetBrains s.r.o.","CFBundleShortVersionString":"3.6.3"}
+[        ] executing: /usr/bin/plutil -convert json -o - /Users/kleak/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/192.6392135/Android Studio.app/Contents/Info.plist
+[  +10 ms] Exit code 0 from: /usr/bin/plutil -convert json -o - /Users/kleak/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/192.6392135/Android Studio.app/Contents/Info.plist
+[        ] {"CFBundleName":"Android Studio","JVMOptions":{"ClassPath":"$APP_PACKAGE\/Contents\/lib\/bootstrap.jar:$APP_PACKAGE\/Contents\/lib\/extensions.jar:$APP_PACKAGE\/Contents\/lib\/util.jar:$APP_PACKAGE\/Contents\/lib\/jdom.jar:$APP_PACKAGE\/Contents\/lib\/log4j.jar:$APP_PACKAGE\/Contents\/lib\/trove4j.jar:$APP_PACKAGE\/Contents\/lib\/jna.jar","JVMVersion":"1.8*,1.8+","WorkingDirectory":"$APP_PACKAGE\/Contents\/bin","MainClass":"com.intellij.idea.Main","Properties":{"idea.paths.selector":"AndroidStudio3.6","idea.executable":"studio","idea.platform.prefix":"AndroidStudio","idea.home.path":"$APP_PACKAGE\/Contents"}},"NSDesktopFolderUsageDescription":"An application in Android Studio requests access to the user's Desktop folder.","LSArchitecturePriority":["x86_64"],"CFBundleVersion":"AI-192.7142.36.36.6392135","CFBundleDevelopmentRegion":"English","NSCameraUsageDescription":"An application in Android Studio requests access to the device's camera.","CFBundleDocumentTypes":[{"CFBundleTypeName":"Android Studio Project File","CFBundleTypeExtensions":["ipr"],"CFBundleTypeRole":"Editor","CFBundleTypeIconFile":"studio.icns"},{"CFBundleTypeName":"All documents","CFBundleTypeExtensions":["*"],"CFBundleTypeOSTypes":["****"],"CFBundleTypeRole":"Editor","LSTypeIsPackage":false}],"NSSupportsAutomaticGraphicsSwitching":true,"CFBundlePackageType":"APPL","CFBundleIconFile":"studio.icns","NSHighResolutionCapable":true,"CFBundleShortVersionString":"3.6","NSMicrophoneUsageDescription":"An application in Android Studio requests access to the device's microphone.","CFBundleInfoDictionaryVersion":"6.0","CFBundleExecutable":"studio","NSLocationUsageDescription":"An application in Android Studio requests access to the user's location information.","LSRequiresNativeExecution":"YES","CFBundleURLTypes":[{"CFBundleTypeRole":"Editor","CFBundleURLName":"Stacktrace","CFBundleURLSchemes":["idea"]}],"CFBundleIdentifier":"com.google.android.studio","LSApplicationCategoryType":"public.app-category.developer-tools","CFBundleSignature":"????","LSMinimumSystemVersion":"10.8","NSDocumentsFolderUsageDescription":"An application in Android Studio requests access to the user's Documents folder.","NSDownloadsFolderUsageDescription":"An application in Android Studio requests access to the user's Downloads folder.","NSNetworkVolumesUsageDescription":"An application in Android Studio requests access to files on a network volume.","CFBundleGetInfoString":"Android Studio 3.6, build AI-192.7142.36.36.6392135. Copyright JetBrains s.r.o., (c) 2000-2020","NSRemovableVolumesUsageDescription":"An application in Android Studio requests access to files on a removable volume."}
+[   +4 ms] executing: /Users/kleak/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/192.6392135/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java -version
+[  +84 ms] Exit code 0 from: /Users/kleak/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/192.6392135/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java -version
+[        ] openjdk version "1.8.0_212-release"
+           OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b4-5784211)
+           OpenJDK 64-Bit Server VM (build 25.212-b4-5784211, mixed mode)
+[   +1 ms] executing: [/Users/kleak/Work/github.com/Kleak/localization_crash_repro/android/] /Users/kleak/Work/github.com/Kleak/localization_crash_repro/android/gradlew -Pverbose=true -Ptarget-platform=android-arm64 -Ptarget=/Users/kleak/Work/github.com/Kleak/localization_crash_repro/lib/main.dart -Ptrack-widget-creation=true -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[+2957 ms] > Task :app:compileFlutterBuildDebug
+[   +1 ms] [  +17 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] [  +41 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] [        ] 2a7bc389f28d83c581f7ddd4601588a22e12512e
+[        ] [        ] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git describe --match *.*.* --first-parent --long --tags
+[        ] [  +20 ms] Exit code 0 from: git describe --match *.*.* --first-parent --long --tags
+[        ] [        ] 1.17.0-3.2.pre-0-g2a7bc389f
+[        ] [  +12 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git rev-parse --abbrev-ref --symbolic @{u}
+[        ] [   +9 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] [        ] origin/beta
+[        ] [        ] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git ls-remote --get-url origin
+[        ] [   +9 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] [        ] git@github.com:flutter/flutter.git
+[        ] [  +73 ms] executing: [/Users/kleak/Work/github.com/flutter/flutter/] git rev-parse --abbrev-ref HEAD
+[        ] [  +11 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] [        ] beta
+[        ] [  +16 ms] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [   +5 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidMavenArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [  +73 ms] Initializing file store
+[        ] [  +10 ms] Done initializing file store
+[        ] [+1331 ms] Skipping target: kernel_snapshot
+[  +72 ms] [ +135 ms] debug_android_application: Starting due to {InvalidatedReason.outputMissing}
+[ +101 ms] [ +125 ms] debug_android_application: Complete
+[ +102 ms] [  +14 ms] Persisting file store
+[        ] [   +8 ms] Done persisting file store
+[        ] [   +3 ms] build succeeded.
+[        ] [  +11 ms] "flutter assemble" took 1,753ms.
+[        ] > Task :app:packLibsflutterBuildDebug UP-TO-DATE
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] > Task :app:preDebugBuild UP-TO-DATE
+[        ] > Task :app:checkDebugManifest UP-TO-DATE
+[        ] > Task :app:generateDebugBuildConfig UP-TO-DATE
+[        ] > Task :app:cleanMergeDebugAssets
+[        ] > Task :app:compileDebugAidl NO-SOURCE
+[        ] > Task :app:compileDebugRenderscript NO-SOURCE
+[  +95 ms] > Task :app:mergeDebugShaders UP-TO-DATE
+[        ] > Task :app:compileDebugShaders UP-TO-DATE
+[        ] > Task :app:generateDebugAssets UP-TO-DATE
+[        ] > Task :app:mergeDebugAssets
+[ +198 ms] > Task :app:copyFlutterAssetsDebug
+[        ] > Task :app:mainApkListPersistenceDebug UP-TO-DATE
+[        ] > Task :app:generateDebugResValues UP-TO-DATE
+[        ] > Task :app:generateDebugResources UP-TO-DATE
+[        ] > Task :app:mergeDebugResources UP-TO-DATE
+[        ] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[        ] > Task :app:processDebugManifest UP-TO-DATE
+[        ] > Task :app:processDebugResources UP-TO-DATE
+[        ] > Task :app:compileDebugKotlin UP-TO-DATE
+[        ] > Task :app:javaPreCompileDebug UP-TO-DATE
+[        ] > Task :app:compileDebugJavaWithJavac UP-TO-DATE
+[        ] > Task :app:compileDebugSources UP-TO-DATE
+[        ] > Task :app:processDebugJavaRes NO-SOURCE
+[        ] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[        ] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[  +99 ms] > Task :app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+[        ] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[        ] > Task :app:mergeExtDexDebug UP-TO-DATE
+[        ] > Task :app:mergeDexDebug UP-TO-DATE
+[        ] > Task :app:validateSigningDebug UP-TO-DATE
+[        ] > Task :app:signingConfigWriterDebug UP-TO-DATE
+[        ] > Task :app:mergeDebugJniLibFolders UP-TO-DATE
+[        ] > Task :app:mergeDebugNativeLibs UP-TO-DATE
+[        ] > Task :app:stripDebugDebugSymbols UP-TO-DATE
+[        ] Compatible side by side NDK version was not found.
+[  +94 ms] > Task :app:packageDebug UP-TO-DATE
+[  +49 ms] > Task :app:assembleDebug
+[        ] BUILD SUCCESSFUL in 3s
+[        ] 31 actionable tasks: 5 executed, 26 up-to-date
+[ +356 ms] Running Gradle task 'assembleDebug'... (completed in 4.3s)
+[  +34 ms] calculateSha: LocalDirectory: '/Users/kleak/Work/github.com/Kleak/localization_crash_repro/build/app/outputs/apk'/app.apk
+[  +56 ms] calculateSha: reading file took 55us
+[ +566 ms] calculateSha: computing sha took 566us
+[   +3 ms] ✓ Built build/app/outputs/apk/debug/app-debug.apk.
+[   +3 ms] executing: /Users/kleak/Library/Android/sdk/build-tools/29.0.2/aapt dump xmltree /Users/kleak/Work/github.com/Kleak/localization_crash_repro/build/app/outputs/apk/app.apk AndroidManifest.xml
+[   +8 ms] Exit code 0 from: /Users/kleak/Library/Android/sdk/build-tools/29.0.2/aapt dump xmltree /Users/kleak/Work/github.com/Kleak/localization_crash_repro/build/app/outputs/apk/app.apk AndroidManifest.xml
+[        ] N: android=http://schemas.android.com/apk/res/android
+             E: manifest (line=2)
+               A: android:versionCode(0x0101021b)=(type 0x10)0x1
+               A: android:versionName(0x0101021c)="1.0.0" (Raw: "1.0.0")
+               A: android:compileSdkVersion(0x01010572)=(type 0x10)0x1c
+               A: android:compileSdkVersionCodename(0x01010573)="9" (Raw: "9")
+               A: package="com.example.localization_crash_repro" (Raw: "com.example.localization_crash_repro")
+               A: platformBuildVersionCode=(type 0x10)0x1c
+               A: platformBuildVersionName=(type 0x10)0x9
+               E: uses-sdk (line=7)
+                 A: android:minSdkVersion(0x0101020c)=(type 0x10)0x10
+                 A: android:targetSdkVersion(0x01010270)=(type 0x10)0x1c
+               E: uses-permission (line=14)
+                 A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+               E: application (line=22)
+                 A: android:label(0x01010001)="localization_crash_repro" (Raw: "localization_crash_repro")
+                 A: android:icon(0x01010002)=@0x7f080000
+                 A: android:name(0x01010003)="io.flutter.app.FlutterApplication" (Raw: "io.flutter.app.FlutterApplication")
+                 A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+                 A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+                 E: activity (line=28)
+                   A: android:theme(0x01010000)=@0x7f0a0000
+                   A: android:name(0x01010003)="com.example.localization_crash_repro.MainActivity" (Raw: "com.example.localization_crash_repro.MainActivity")
+                   A: android:launchMode(0x0101001d)=(type 0x10)0x1
+                   A: android:configChanges(0x0101001f)=(type 0x11)0x40003fb4
+                   A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x10
+                   A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+                   E: meta-data (line=42)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.NormalTheme" (Raw: "io.flutter.embedding.android.NormalTheme")
+                     A: android:resource(0x01010025)=@0x7f0a0001
+                   E: meta-data (line=52)
+                     A: android:name(0x01010003)="io.flutter.embedding.android.SplashScreenDrawable" (Raw: "io.flutter.embedding.android.SplashScreenDrawable")
+                     A: android:resource(0x01010025)=@0x7f040000
+                   E: intent-filter (line=56)
+                     E: action (line=57)
+                       A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+                     E: category (line=59)
+                       A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+                 E: meta-data (line=66)
+                   A: android:name(0x01010003)="flutterEmbedding" (Raw: "flutterEmbedding")
+                   A: android:value(0x01010024)=(type 0x10)0x2
+[   +1 ms] Stopping app 'app.apk' on Pixel 4.
+[        ] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell am force-stop com.example.localization_crash_repro
+[  +41 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell pm list packages com.example.localization_crash_repro
+[  +34 ms] package:com.example.localization_crash_repro
+[   +4 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell cat /data/local/tmp/sky.com.example.localization_crash_repro.sha1
+[  +22 ms] bd735cc5af014a1c949a86dc0616be0f626c3e3b
+[   +1 ms] Latest build already installed.
+[        ] Pixel 4 startApp
+[   +2 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 shell am start -a android.intent.action.RUN -f 0x20000000 --ez enable-background-compilation true --ez enable-dart-profiling true --ez enable-checked-mode true --ez verify-entry-points true com.example.localization_crash_repro/com.example.localization_crash_repro.MainActivity
+[  +47 ms] Starting: Intent { act=android.intent.action.RUN flg=0x20000000 cmp=com.example.localization_crash_repro/.MainActivity (has extras) }
+[        ] Waiting for observatory port to be available...
+[ +430 ms] Observatory URL on device: http://127.0.0.1:43087/Vpb0TtUx1GY=/
+[   +1 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward tcp:0 tcp:43087
+[   +7 ms] 57172
+[        ] Forwarded host port 57172 to device port 43087 for Observatory
+[   +9 ms] Connecting to service protocol: http://127.0.0.1:57172/Vpb0TtUx1GY=/
+[ +155 ms] Successfully connected to service protocol: http://127.0.0.1:57172/Vpb0TtUx1GY=/
+[   +2 ms] Sending to VM service: getVM({})
+[   +4 ms] Result: {type: VM, name: vm, architectureBits: 64, hostCPU: Qualcomm Technologies, Inc SM8150, operatingSystem: android, targetCPU: arm64, version: 2.8.0-dev.20.10 (beta) (Mon Apr 20 12:00:58 2020 +0200) on "android_arm64", _profilerMode: VM, _nativeZoneM...
+[   +3 ms] Sending to VM service: getIsolate({isolateId: isolates/1265272806666175})
+[   +2 ms] Sending to VM service: _flutter.listViews({})
+[   +3 ms] Result: {type: FlutterViewList, views: [{type: FlutterView, id: _flutterView/0x7dc308df20, isolate: {type: @Isolate, fixedId: true, id: isolates/1265272806666175, name: main.dart$main-1265272806666175, number: 1265272806666175}}]}
+[   +4 ms] DevFS: Creating new filesystem on the device (null)
+[        ] Sending to VM service: _createDevFS({fsName: localization_crash_repro})
+[   +8 ms] E/Dart    (22884): ../../third_party/dart/runtime/vm/object.h: 7545: error: Handle check failed: saw A expected TypeArguments
+[        ] E/DartVM  (22884): version=2.8.0-dev.20.10 (beta) (Mon Apr 20 12:00:58 2020 +0200) on "android_arm64"
+[        ] E/DartVM  (22884): pid=22884, thread=22909, isolate=main(0x7cc08e4e00)
+[        ] E/DartVM  (22884): isolate_instructions=7cd591c8e0, vm_instructions=7cd591c8e0
+[        ] E/DartVM  (22884):   pc 0x0000007cd5a27314 fp 0x0000007cd320a120 /data/app/com.example.localization_crash_repro-pZQVeADonn58-tRNoQEpOg==/lib/arm64/libflutter.so+0x1718314
+[        ] E/DartVM  (22884): -- End of DumpStackTrace
+[        ] E/DartVM  (22884): [exit     : sp(0) fp(0x7cd320a338) pc(0)]
+[        ] E/DartVM  (22884): [stub     : sp(0x7cd320a348) fp(0x7cd320a378) pc(0x7cc46851b8)]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320a388) fp(0x7cd320a3b8) pc(0x7cc0092fa4) dart:core_Map_Map._fromLiteral@0150898 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320a3c8) fp(0x7cd320bcc8) pc(0x7cb51501d4) package:localization_crash_repro/localization.generated.dart_AppLocalizations_init_languages ]
+[        ] E/DartVM  (22884): [entry    : sp(0x7cd320bcd8) fp(0x7cd320bd88) pc(0x7cc4681e54)]
+[        ] E/DartVM  (22884): [exit     : sp(0) fp(0x7cd320c008) pc(0)]
+[        ] E/DartVM  (22884): [stub     : sp(0x7cd320c018) fp(0x7cd320c038) pc(0x7cc4685080)]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c048) fp(0x7cd320c060) pc(0x7cb514bd84) package:localization_crash_repro/localization.generated.dart_AppLocalizations_get_languages ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c070) fp(0x7cd320c090) pc(0x7cb514bcb4) package:localization_crash_repro/localization.dart_AppLocalizationsDelegate_isSupported ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c0a0) fp(0x7cd320c100) pc(0x7cb5144490) package:flutter/src/widgets/app.dart__WidgetsAppState@420236006__debugCheckLocalizations@420236006_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c110) fp(0x7cd320c140) pc(0x7cb5143f7c) package:flutter/src/widgets/app.dart__WidgetsAppState@420236006__debugCheckLocalizations@420236006 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c150) fp(0x7cd320c1a8) pc(0x7cb513c528) package:flutter/src/widgets/app.dart__WidgetsAppState@420236006_build ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c1b8) fp(0x7cd320c1e8) pc(0x7cb512c01c) package:flutter/src/widgets/framework.dart_StatefulElement_build ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c1f8) fp(0x7cd320c260) pc(0x7cb5be2b50) package:flutter/src/widgets/framework.dart_ComponentElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c270) fp(0x7cd320c298) pc(0x7cb512be14) package:flutter/src/widgets/framework.dart_StatefulElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c2a8) fp(0x7cd320c2d8) pc(0x7cb5be179c) package:flutter/src/widgets/framework.dart_Element_rebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c2e8) fp(0x7cd320c310) pc(0x7cb5be101c) package:flutter/src/widgets/framework.dart_ComponentElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c320) fp(0x7cd320c360) pc(0x7cb5128828) package:flutter/src/widgets/framework.dart_StatefulElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c370) fp(0x7cd320c398) pc(0x7cb5be07a8) package:flutter/src/widgets/framework.dart_ComponentElement_mount ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c3a8) fp(0x7cd320c3f0) pc(0x7cb5bdf2a8) package:flutter/src/widgets/framework.dart_Element_inflateWidget ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c400) fp(0x7cd320c440) pc(0x7cb5bde6e8) package:flutter/src/widgets/framework.dart_Element_updateChild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c450) fp(0x7cd320c4e0) pc(0x7cb5be318c) package:flutter/src/widgets/framework.dart_ComponentElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c4f0) fp(0x7cd320c520) pc(0x7cb5be179c) package:flutter/src/widgets/framework.dart_Element_rebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c530) fp(0x7cd320c558) pc(0x7cb5be101c) package:flutter/src/widgets/framework.dart_ComponentElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c568) fp(0x7cd320c590) pc(0x7cb5be07a8) package:flutter/src/widgets/framework.dart_ComponentElement_mount ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c5a0) fp(0x7cd320c5e8) pc(0x7cb5bdf2a8) package:flutter/src/widgets/framework.dart_Element_inflateWidget ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c5f8) fp(0x7cd320c638) pc(0x7cb5bde6e8) package:flutter/src/widgets/framework.dart_Element_updateChild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c648) fp(0x7cd320c6d8) pc(0x7cb5be318c) package:flutter/src/widgets/framework.dart_ComponentElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c6e8) fp(0x7cd320c710) pc(0x7cb512be14) package:flutter/src/widgets/framework.dart_StatefulElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c720) fp(0x7cd320c750) pc(0x7cb5be179c) package:flutter/src/widgets/framework.dart_Element_rebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c760) fp(0x7cd320c788) pc(0x7cb5be101c) package:flutter/src/widgets/framework.dart_ComponentElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c798) fp(0x7cd320c7d8) pc(0x7cb5128828) package:flutter/src/widgets/framework.dart_StatefulElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c7e8) fp(0x7cd320c810) pc(0x7cb5be07a8) package:flutter/src/widgets/framework.dart_ComponentElement_mount ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c820) fp(0x7cd320c868) pc(0x7cb5bdf2a8) package:flutter/src/widgets/framework.dart_Element_inflateWidget ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c878) fp(0x7cd320c8b8) pc(0x7cb5bde6e8) package:flutter/src/widgets/framework.dart_Element_updateChild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c8c8) fp(0x7cd320c958) pc(0x7cb5be318c) package:flutter/src/widgets/framework.dart_ComponentElement_performRebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c968) fp(0x7cd320c998) pc(0x7cb5be179c) package:flutter/src/widgets/framework.dart_Element_rebuild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c9a8) fp(0x7cd320c9d0) pc(0x7cb5be101c) package:flutter/src/widgets/framework.dart_ComponentElement__firstBuild@371042623 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320c9e0) fp(0x7cd320ca08) pc(0x7cb5be07a8) package:flutter/src/widgets/framework.dart_ComponentElement_mount ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320ca18) fp(0x7cd320ca60) pc(0x7cb5bdf2a8) package:flutter/src/widgets/framework.dart_Element_inflateWidget ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320ca70) fp(0x7cd320cab0) pc(0x7cb5bde6e8) package:flutter/src/widgets/framework.dart_Element_updateChild ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cac0) fp(0x7cd320cb48) pc(0x7cb5bdd350) package:flutter/src/widgets/binding.dart_RenderObjectToWidgetElement__rebuild@392399801 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cb58) fp(0x7cd320cb80) pc(0x7cb5bd569c) package:flutter/src/widgets/binding.dart_RenderObjectToWidgetElement_mount ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cb90) fp(0x7cd320cbd8) pc(0x7cb5bd545c) package:flutter/src/widgets/binding.dart_RenderObjectToWidgetAdapter_attachToRenderTree_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cbe8) fp(0x7cd320cc80) pc(0x7cb5bd1b94) package:flutter/src/widgets/framework.dart_BuildOwner_buildScope ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cc90) fp(0x7cd320cd08) pc(0x7cb5bcdcfc) package:flutter/src/widgets/binding.dart_RenderObjectToWidgetAdapter_attachToRenderTree ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cd18) fp(0x7cd320cd60) pc(0x7cb5bcc0d0) package:flutter/src/widgets/binding.dart__WidgetsFlutterBinding&BindingBase&GestureBinding&ServicesBinding&SchedulerBinding&PaintingBinding&SemanticsBinding&RendererBinding&WidgetsBinding@392399801_attachRootWidget ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cd70) fp(0x7cd320cdb0) pc(0x7cb5bcbce8) package:flutter/src/widgets/binding.dart__WidgetsFlutterBinding&BindingBase&GestureBinding&ServicesBinding&SchedulerBinding&PaintingBinding&SemanticsBinding&RendererBinding&WidgetsBinding@392399801_scheduleAttachRootWidget_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cdc0) fp(0x7cd320ce28) pc(0x7cc00ba3a4) dart:async_::__rootRun@4048458 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320ce38) fp(0x7cd320ce98) pc(0x7cc00ba114) dart:async_::__rootRun@4048458__rootRun@4048458 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cea8) fp(0x7cd320cf38) pc(0x7cc00b9490) dart:async__CustomZone@4048458_run ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cf48) fp(0x7cd320cfa8) pc(0x7cb5bbe288) dart:async__CustomZone@4048458_runGuarded ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320cfb8) fp(0x7cd320cff8) pc(0x7cb5bbe0d8) dart:async__CustomZone@4048458_bindCallbackGuarded_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d008) fp(0x7cd320d070) pc(0x7cc00ba460) dart:async_::__rootRun@4048458 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d080) fp(0x7cd320d0e0) pc(0x7cc00ba114) dart:async_::__rootRun@4048458__rootRun@4048458 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d0f0) fp(0x7cd320d180) pc(0x7cc00b9490) dart:async__CustomZone@4048458_run ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d190) fp(0x7cd320d1e0) pc(0x7cb5bcbae4) dart:async__CustomZone@4048458_bindCallback_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d1f0) fp(0x7cd320d230) pc(0x7cb5bcb86c) dart:async_Timer__createTimer@4048458_<anonymous closure> ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d240) fp(0x7cd320d270) pc(0x7cc00afedc) dart:core__Closure@0150898_call ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d280) fp(0x7cd320d300) pc(0x7cb5bca7e0) dart:isolate__Timer@1026248__runTimers@1026248 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d310) fp(0x7cd320d338) pc(0x7cb5bc7b20) dart:isolate__Timer@1026248__handleMessage@1026248 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d348) fp(0x7cd320d380) pc(0x7cb5bc7664) dart:isolate__Timer@1026248__handleMessage@1026248__handleMessage@1026248 ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d390) fp(0x7cd320d3c0) pc(0x7cc00afedc) dart:core__Closure@0150898_call ]
+[        ] E/DartVM  (22884): [dart     : sp(0x7cd320d3d0) fp(0x7cd320d3f8) pc(0x7cc00afda0) dart:isolate__RawReceivePortImpl@1026248__handleMessage@1026248 ]
+[        ] E/DartVM  (22884): [entry    : sp(0x7cd320d408) fp(0x7cd320d4c8) pc(0x7cc4681e54)]
+[        ] F/libc    (22884): Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 22909 (1.ui), pid 22884 (ion_crash_repro)
+[  +22 ms] Result: {type: FileSystem, name: localization_crash_repro, uri: file:///data/user/0/com.example.localization_crash_repro/code_cache/localization_crash_reproKVCUYD/localization_crash_repro/}
+[        ] DevFS: Created new filesystem on the device (file:///data/user/0/com.example.localization_crash_repro/code_cache/localization_crash_reproKVCUYD/localization_crash_repro/)
+[   +1 ms] Updating assets
+[  +73 ms] Syncing files to device Pixel 4...
+[   +1 ms] Scanning asset files
+[   +2 ms] <- reset
+[        ] Compiling dart to kernel with 0 updated files
+[   +1 ms] <- recompile package:localization_crash_repro/main.dart ce106861-d233-4bb8-9f48-b99d3a93182f
+[        ] <- ce106861-d233-4bb8-9f48-b99d3a93182f
+[   +1 ms] *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+[        ] Build fingerprint: 'google/flame/flame:10/QQ2A.200405.005/6254899:user/release-keys'
+[        ] Revision: 'MP1.0'
+[        ] ABI: 'arm64'
+[        ] Timestamp: 2020-04-28 16:09:04+0200
+[        ] pid: 22884, tid: 22909, name: 1.ui  >>> com.example.localization_crash_repro <<<
+[        ] uid: 10287
+[        ] signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+[        ]     x0  0000000000000000  x1  000000000000597d  x2  0000000000000006  x3  0000007cd320a080
+[        ]     x4  0000000000000000  x5  0000000000000000  x6  0000000000000000  x7  0000008000000000
+[        ]     x8  00000000000000f0  x9  9853664850b23729  x10 0000000000000001  x11 0000000000000000
+[        ]     x12 fffffff0fffffbdf  x13 0000000000000003  x14 0000000000000002  x15 0000000001fbdec0
+[        ]     x16 0000007dc1e208c0  x17 0000007dc1dfe0c0  x18 0000007cd2d30000  x19 0000000000005964
+[        ]     x20 000000000000597d  x21 00000000ffffffff  x22 0000007cd5d959b8  x23 fffffffffffffff0
+[        ]     x24 0000007cd320a360  x25 0000007cd3134000  x26 0000007cd7f7a000  x27 0000007cc47073a0
+[        ]     x28 0000000000000004  x29 0000007cd320a120
+[        ]     sp  0000007cd320a060  lr  0000007dc1db2f48  pc  0000007dc1db2f74
+[        ] backtrace:
+[        ]       #00 pc 0000000000081f74  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 8de865099c99977483c8947f9b7937e9)
+[        ]       #01 pc 000000000160da58  /data/app/com.example.localization_crash_repro-pZQVeADonn58-tRNoQEpOg==/lib/arm64/libflutter.so!libflutter.so (offset 0x1280000) (BuildId: cb3e07feb3429313da484e9748af7840fdb12099)
+[        ]       #02 pc 0000000001613e84  /data/app/com.example.localization_crash_repro-pZQVeADonn58-tRNoQEpOg==/lib/arm64/libflutter.so!libflutter.so (offset 0x1280000) (BuildId: cb3e07feb3429313da484e9748af7840fdb12099)
+[        ]       #03 pc 0000000001751db0  /data/app/com.example.localization_crash_repro-pZQVeADonn58-tRNoQEpOg==/lib/arm64/libflutter.so!libflutter.so (offset 0x1280000) (BuildId: cb3e07feb3429313da484e9748af7840fdb12099)
+[        ]       #04 pc 0000000000001850  <anonymous:7cc4680000>
+[  +46 ms] Updating files
+[  +98 ms] DevFS: Sync finished
+[   +1 ms] Syncing files to device Pixel 4... (completed in 154ms)
+[        ] Synced 0.9MB.
+[   +1 ms] Sending to VM service: _flutter.listViews({})
+[   +2 ms] Result: {type: FlutterViewList, views: [{type: FlutterView, id: _flutterView/0x7dc308df20, isolate: {type: @Isolate, fixedId: true, id: isolates/1265272806666175, name: main.dart$main-1265272806666175, number: 1265272806666175}}]}
+[        ] <- accept
+[        ] Connected to _flutterView/0x7dc308df20.
+[   +1 ms] Flutter run key commands.
+[   +1 ms] r Hot reload. 🔥🔥🔥
+[   +1 ms] R Hot restart.
+[        ] h Repeat this help message.
+[        ] d Detach (terminate "flutter run" but leave application running).
+[        ] c Clear the screen
+[        ] q Quit (terminate the application on the device).
+[        ] An Observatory debugger and profiler on Pixel 4 is available at: http://127.0.0.1:57172/Vpb0TtUx1GY=/
+[  +33 ms] Service protocol connection closed.
+[        ] Lost connection to device.
+[   +2 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward --list
+[   +7 ms] Exit code 0 from: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward --list
+[        ] 9B131FFAZ00181 tcp:57172 tcp:43087
+[   +1 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward --remove tcp:57172
+[  +10 ms] DevFS: Deleting filesystem on the device (file:///data/user/0/com.example.localization_crash_repro/code_cache/localization_crash_reproKVCUYD/localization_crash_repro/)
+[        ] Sending to VM service: _deleteDevFS({fsName: localization_crash_repro})
+[ +255 ms] Ignored error while cleaning up DevFS: TimeoutException after 0:00:00.250000: Future not completed
+[   +1 ms] executing: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward --list
+[   +6 ms] Exit code 0 from: /Users/kleak/Library/Android/sdk/platform-tools/adb -s 9B131FFAZ00181 forward --list
+[   +1 ms] "flutter run" took 9,633ms.
